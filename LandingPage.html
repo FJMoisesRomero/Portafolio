@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Landing Page - Portafolio</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="EstiloPrincipal.css" rel="stylesheet" />
+    <!--Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+    <!--Swipper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+     <!--Header y Navegacion-->
+        <header class="header">
+            <a id="easteregg" class="logo">Portafolio.</a>
+     
+            <nav class="navbar">
+                <a href="#home" class="active">Inicio</a>
+                <a href="#about">Sobre Mi </a>
+                <a href="#services">Conocimientos</a>
+                <a href="#portfolio">Galeria</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>  
+                <a href="database.html" style="padding:0px;margin-left:-15px;">DB</a>
+            </nav>
+            <div class="bx bx-moon toggle-icon" id="darkMode-icon"></div>
+            <i class='bx bx-brush'id="color-picker"></i>
+            <div id="color-palette">
+                <div class="color" style="--color-value: pink;"></div>
+                <div class="color" style="--color-value: #f67828;"></div>
+                <div class="color" style="--color-value: lightskyblue;"></div>
+                <div class="color" style="--color-value: #754ef9;"></div>
+                <div class="color" style="--color-value: #ff6961;"></div>
+                <div class="color" style="--color-value: lightgreen;"></div>
+                <div class="color" style="--color-value: #836953;"></div>
+                <div class="color" style="--color-value: #9FB5A3;"></div>
+            </div>
+            <audio id="miAudio" src="audio.mp3"></audio>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+
+        <!--Seccion de Inicio-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hola, soy</h3>
+                <h1>Franco Moises</h1>
+                <p>Soy un estudiante de Ingeniería en Informática y un desarrollador apasionado por crear soluciones innovadoras que ayuden a mejorar la vida de las personas.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/franco.moises.1/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/whothefuckisfran/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://www.linkedin.com/in/franco-moises-717060279/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <a download="CV_Franco_Moises" href="cv_franco_moises.pdf" class="btn">Descargar CV</a>
+            </div>
+            <img src="https://i.ibb.co/txwFrjn/1682206756886.png" alt="FrancoMoisesProfilePic" id="profpic1"/>
+            <div class="profession-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:0">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Desarrollador Web</h3>
+                    </div>
+                    <div class="profession"style="--i:1">
+                        <i class='bx bxl-python' ></i>
+                        <h3>Desarrollo en Python</h3>
+                    </div>
+                    <div class="profession"style="--i:2">
+                        <i class='bx bxl-java' ></i>
+                        <h3>Desarrollo en Java</h3>
+                    </div>
+                    <div class="profession"style="--i:3">
+                        <i class='bx bxs-ghost'></i>
+                        <h3>Desarrollo en C#</h3>
+                    </div>
+                
+                    <div class="circle"></div>
+                    
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-img">
+
+            </div>
+        </section>
+
+        <!--Seccion Sobre Mi-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="https://i.ibb.co/hRdvp5L/profpic2.png" alt="FrancoMoisespic2" id="profpic2"/>
+                <div class="divtriangulo"><div class="triangulo"></div></div>
+            </div>
+              
+            <div class="about-content">
+                <h2 class="heading">Sobre<span> Mi</span></h2>
+                <h3>¡Hola, estoy aqui para ayudarte en tu próximo proyecto!</h3>
+                <p> Mi nombre es Franco Julián Moisés Romero, tengo 23 años y soy un estudiante de la carrera Ingeniería en Informática en la Universidad Católica en la provincia de Salta Capital - Argentina. Actualmente me encuentro cursando el tercer año de la carrera y me gusta aprender y adquirir conocimiento sobre el Desarrollo de Páginas Web tanto en el aspecto "FrontEnd" como en el "BackEnd"</p>
+                <br /><p id="parrafo1" style="display: none;">Me encuentro realizando diversos cursos de forma particular sobre desarrollo FullStack, Base de Datos e Inglés, para seguir complementando mis estudios Universitarios; asi como también estoy muy interesado en adquirir experiencia laboral, tanto en pasantías como en proyectos de los cuales deseo poder aprender y forjar un carácter profesional.</p>
+                <button class="btn" id="boton1" onclick="toggleParrafo()">Leer más</button>
+
+            </div>
+        </section>
+        
+        <!-- Seccion Mis Conocimientos -->
+        <section class="services" id="services">
+            <h2 class="heading">Mis<span> Conocimientos</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <div class="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value: 60"></div>
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Desarrollador Web</h3>
+                    <p>Desarrollo web significa construir y mantener sitios web; es el trabajo que tiene lugar en un segundo plano y que permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario.</p>
+                    <a target="_blank" href="https://blog.openclassrooms.com/es/2017/09/11/que-es-el-desarrollo-web/#:~:text=Desarrollo%20web%20significa%20construir%20y,la%20mejor%20experiencia%20de%20usuario." class="btn">Leer Mas</a>
+                    
+                </div>
+                <div class="services-box">
+                    <div class="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70"></div>
+                    <i class='bx bxl-python' ></i>
+                    <h3>Desarrollo en Python</h3>
+                    <p>Python es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software, la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes.</p>
+                    <a target="_blank" href="https://aws.amazon.com/es/what-is/python/" class="btn">Leer Mas</a>
+                    
+                </div>
+                <div class="services-box">
+                    <div class="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70"></div>
+                    <i class='bx bxl-java' ></i>
+                    <h3>Desarrollo en Java</h3>
+                    <p>Java es una plataforma informática de lenguaje de programación creada por Sun Microsystems en 1995. Ha evolucionado desde sus humildes comienzos hasta impulsar una gran parte del mundo digital actual, ya que es una plataforma fiable en la que se crean muchos servicios y aplicaciones.</p>
+                    <a target="_blank" href="https://www.java.com/es/download/help/whatis_java.html" class="btn">Leer Mas</a>
+                </div>
+                <div class="services-box">
+                    <div class="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="--value: 20"></div>
+                    <i class='bx bxs-ghost'></i>
+                    <h3>Desarrollo en C#</h3>
+                    <p>C# (pronunciado "See Sharp") es un lenguaje de programación moderno, orientado a objetos y seguro de tipos. C# permite a los desarrolladores crear muchos tipos de aplicaciones seguras y sólidas que se ejecutan en .NET.</p>
+                    <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" class="btn">Leer Mas</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de Galeria-->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Galeria<span> De Imagenes</span></h2>
+        
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="https://i.ibb.co/x7MH2Z4/image.png" alt="proyecto"/>
+                
+                    <div class="portfolio-layer">
+                        <h4>Desarrollo Web</h4>
+                        <p>Primer página web a modo de presentación de habilidades y capacidades.</p>
+                        <a target="_blank" href="https://i.ibb.co/x7MH2Z4/image.png"><i class='bx bx-link-external'></i></a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://i.ibb.co/njGW7pN/imagen-2023-04-24-140856878.png" alt="proyecto"/>
+                
+                    <div class="portfolio-layer">
+                        <h4>Desarrollado en Python</h4>
+                        <p>Aplicación de recordatorios y calendario de tareas pendientes.</p>
+                        <a target="_blank" href="https://i.ibb.co/njGW7pN/imagen-2023-04-24-140856878.png"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://i.ibb.co/bNVWkxP/java.png" alt="proyecto"/>
+                
+                    <div class="portfolio-layer">
+                        <h4>Desarrollado en Java</h4>
+                        <p>Resolucón de problemas utilizando estructuras dinámicas.</p>
+                        <a target="_blank" href="https://i.ibb.co/bNVWkxP/java.png"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="https://i.ibb.co/c3DKWSK/sisharp.png" alt="proyecto"/>
+                
+                    <div class="portfolio-layer">
+                        <h4>Desarrollado en C#</h4>
+                        <p>Aplicaciones de tipo formulario, utilizando funciones y procedimientos.</p>
+                        <a target="_blank" href="https://i.ibb.co/c3DKWSK/sisharp.png"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sobre mis proyectos-->
+        <section id="projects">
+            <div class="project-container">
+                <h2 class="heading">Mis<span> Proyectos</span></h2>
+                <div class="project-wrapper">
+                    <div class="project-box mySwiper">
+                        <div class="project-content swiper-wrapper">
+                            <div class="project-slide swiper-slide">
+                                <img src="https://i.ibb.co/HrGsbsM/image.png" alt="proyecto final 1"/>
+                                <h3>Proyecto Final Lenguajes 1</h3>
+                                <p>Mi proyecto final para la acreditación de la materia, consistió en utilizar los conocimientos adquiridos durante la cursada, sobre Matrices y Vectores, para construir una serie de minijuegos, a los cuales es posible acceder a traves de un Menú y poseen 2 tipos de modo de juego (Player vs Player y Player vs CPU). Dichos juegos son El Buscaminas, Tateti y Batalla Naval</p>
+                            </div>
+
+                            <div class="project-slide swiper-slide">
+                                <img src="https://i.ibb.co/mygxKZj/image.png" alt="proyecto final 2"/>
+                                <h3>Proyecto Final Lenguajes 2</h3>
+                                <p>Para este proyecto, se realizó un trabajo grupal en el que se utilizó el lenguaje de programación Python para realizar una aplicación de recordatorios y anotaciónes de tareas del día a día. Se utilizaron librerías como Tkinter y demás complementos visuales y auditivos para concretar este proyecto llamado RE:Minder. </p>
+                            </div>
+
+                            <div class="project-slide swiper-slide">
+                                <img src="https://i.ibb.co/HHdWdRw/image.png" alt="proyecto final 3"/>
+                                <h3>Proyecto Final Lenguajes 3</h3>
+                                <p>Este proyecto es la página Web que estas apreciando en este momento, utilice la combinación de los lenguajes HTML, CSS, Javascript, C# y ASP.NET para poder crear todo el contenido visual y todas las funciones de interacción con los botones y enlaces que puedes encontrar en esta página, asi también como las animaciones y los efectos visuales.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de Contacto-->
+        <section class="contact" id="contact">
+            <h2 class="heading">Déjame un<span> Mensaje</span></h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre Completo">
+                        <input type="email" placeholder="Correo Electronico">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Numero de Telefono">
+                        <input type="text" placeholder="Asunto">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu Mensaje"></textarea>
+                    <input type="submit" value="Enviar Mensaje" class="btn">
+                </form>
+        </section>
+
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Franco Moisés | Todos los Derechos Reservados</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </div>
+
+        <!--Scripts-->
+        <script src="PrincipalScript.js"></script>
+        <!--Swipper-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            /*Swipper*/
+            var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 10000, disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 50,
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+        <!--Scroll Reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            /*Scroll Reveal*/
+            ScrollReveal({ 
+            reset: true,
+            distance:'80px',
+            duration: 1500,
+            delay: 0
+            });
+            ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+            ScrollReveal().reveal('#profpic1, .services-container, .portfolio-box, .project-wrapper, .contact form', {origin: 'bottom'})
+            ScrollReveal().reveal('.about-img, .home-content h1', {origin: 'left'})
+            ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {origin: 'right'})
+        </script>
+
+</body>
+</html>
