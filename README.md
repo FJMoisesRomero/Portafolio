@@ -18,7 +18,7 @@ Este portafolio no solo muestra mis habilidades técnicas, sino que también ref
 
 ## 🖥️ Vista previa  
 Siéntete libre de explorar el código o probar el proyecto en tu máquina local. Estoy abierto a comentarios y sugerencias. 🤗  
-
+Puedes visitar la pagina en https://fjmoisesromero.github.io/Portafolio/LandingPage.html
 ---
 
 # 🌐 My Web Portfolio 2023
@@ -41,3 +41,4 @@ This portfolio not only showcases my technical skills but also reflects my passi
 
 ## 🖥️ Preview  
 Feel free to explore the code or try out the project on your local machine. I'm open to feedback and suggestions! 🤗  
+You can visit the page in https://fjmoisesromero.github.io/Portafolio/LandingPage.html
