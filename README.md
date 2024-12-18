@@ -42,3 +42,6 @@ This portfolio not only showcases my technical skills but also reflects my passi
 ## 🖥️ Preview  
 Feel free to explore the code or try out the project on your local machine. I'm open to feedback and suggestions! 🤗  
 You can visit the page in https://fjmoisesromero.github.io/Portafolio/LandingPage.html
+
+---
+![Vista previa del portafolio](image.png)
